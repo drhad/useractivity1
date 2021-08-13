@@ -1,0 +1,35 @@
+{
+  "name": "Announcements",
+  "fields": [
+    {
+      "fieldName": "announcementTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "announcementDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "calendar",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "emailID",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "announcements",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "skillzaguseractivity",
+  "clientRootFolder": "skillzaguseractivity",
+  "databaseType": "sql",
+  "changelogDate": "20210812154924"
+}

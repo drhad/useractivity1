@@ -1,0 +1,41 @@
+{
+  "name": "CareerGoals",
+  "fields": [
+    {
+      "fieldName": "industry",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "goal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "time",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "GoalStatus",
+      "fieldValues": "INPROGRESS,STARTED,CLOSED"
+    },
+    {
+      "fieldName": "goalType",
+      "fieldType": "GoalType",
+      "fieldValues": "SHORTTERM,LONGTERM"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "career_goals",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "skillzaguseractivity",
+  "clientRootFolder": "skillzaguseractivity",
+  "databaseType": "sql",
+  "changelogDate": "20210812154925"
+}

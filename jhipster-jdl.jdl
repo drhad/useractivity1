@@ -1,0 +1,82 @@
+enum ProjectStatus {
+INPROGRESS,
+STARTED,
+COMPLETED
+}
+
+entity ProjectManagement {
+    emailID String,
+    projectName String,	
+    companyName String,
+    companyProfile String,
+    companyDescription String,
+    projectDescription String,
+    objective String,
+    dates Instant,
+    validFrom Instant,
+    validTo Instant,
+    logo String,
+    videoUrl String,
+    description String,
+    createdBy String,
+    createdTime Instant,
+    projectStatus ProjectStatus,
+    url1 String,
+    url2 String,
+    url3 String
+}
+
+entity Announcements {
+   announcementTitle String,
+   announcementDescription String,
+   calendar Instant,
+   emailID String
+}
+
+enum GoalStatus{
+INPROGRESS,
+STARTED,
+CLOSED
+}
+
+enum GoalType{
+SHORTTERM,
+LONGTERM
+}
+
+entity CareerGoals {
+   industry String,
+   goal String,
+   time String,
+   status GoalStatus,
+   goalType GoalType	
+}
+
+enum CertificationType{
+INTERNAL,
+EXTERNAL
+}
+
+
+entity JobExperience {
+   degreeTitle String,
+   startYear Integer,
+   endYear Integer,
+   yearsOfExperience String,
+}
+
+entity Achievements {
+   certificationTitle String,
+   certificateDescription String,
+   certificationType CertificationType,
+   dateOfCompletion Instant,
+   certificationScore Long,
+   uploadCertificate String
+}
+
+// Set pagination options
+paginate all with pagination
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+service all with serviceImpl

@@ -1,0 +1,44 @@
+{
+  "name": "Achievements",
+  "fields": [
+    {
+      "fieldName": "certificationTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "certificateDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "certificationType",
+      "fieldType": "CertificationType",
+      "fieldValues": "INTERNAL,EXTERNAL"
+    },
+    {
+      "fieldName": "dateOfCompletion",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "certificationScore",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "uploadCertificate",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "achievements",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "skillzaguseractivity",
+  "clientRootFolder": "skillzaguseractivity",
+  "databaseType": "sql",
+  "changelogDate": "20210812154927"
+}

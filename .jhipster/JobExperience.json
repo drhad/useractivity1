@@ -1,0 +1,35 @@
+{
+  "name": "JobExperience",
+  "fields": [
+    {
+      "fieldName": "degreeTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startYear",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "endYear",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "yearsOfExperience",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "job_experience",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "skillzaguseractivity",
+  "clientRootFolder": "skillzaguseractivity",
+  "databaseType": "sql",
+  "changelogDate": "20210812154926"
+}

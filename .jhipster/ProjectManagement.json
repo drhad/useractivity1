@@ -1,0 +1,96 @@
+{
+  "name": "ProjectManagement",
+  "fields": [
+    {
+      "fieldName": "emailID",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "projectName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyProfile",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "companyDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "projectDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "objective",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "dates",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "validFrom",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "validTo",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "logo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "videoUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "projectStatus",
+      "fieldType": "ProjectStatus",
+      "fieldValues": "INPROGRESS,STARTED,COMPLETED"
+    },
+    {
+      "fieldName": "url1",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "url2",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "url3",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "project_management",
+  "dto": "mapstruct",
+  "pagination": "pagination",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "skillzaguseractivity",
+  "clientRootFolder": "skillzaguseractivity",
+  "databaseType": "sql",
+  "changelogDate": "20210812154923"
+}
